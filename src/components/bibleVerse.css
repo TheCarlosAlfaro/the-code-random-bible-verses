@@ -1,0 +1,7 @@
+.verse {
+  background-color: white;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #111;
+}
