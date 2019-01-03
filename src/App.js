@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { bibleVerses } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
+import PinInput from 'react-pin-input';
 
 class App extends Component {
   constructor(props) {
@@ -11,10 +12,15 @@ class App extends Component {
     };
   }
 
-  generateVerse() {
+  generateVerse(value) {
     let verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
     this.setState({ verse: verse });
   }
+
+  handleSubmit = e => {
+    e.preventDefault();
+    this.generateVerse(e.value);
+  };
 
   render() {
     return (
@@ -22,7 +28,24 @@ class App extends Component {
         <header className="App-header">
           <h1>The Code</h1>
           <BibleVerse verse={this.state.verse} />
-          <button onClick={() => this.generateVerse()}>Give me access</button>
+          <form onSubmit={this.handleSubmit} noValidate>
+            <PinInput
+              length={6}
+              secret
+              onChange={(value, index) => {}}
+              type="password"
+              style={{ padding: '10px' }}
+              inputStyle={{
+                borderColor: 'white',
+                color: 'white',
+                fontSize: '2rem'
+              }}
+              inputFocusStyle={{ borderColor: '#02D100' }}
+              onComplete={(value, index) => {}}
+              noValidate
+            />
+            <button type="submit">Give me access</button>
+          </form>
         </header>
         <small className="github-link">
           Made with <i className="fa fa-heart" /> by&nbsp;
