@@ -3,6 +3,7 @@ import './App.css';
 import { bibleVerses } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
+import logo from './logo.png';
 
 class App extends Component {
   constructor(props) {
@@ -39,10 +40,6 @@ class App extends Component {
     }
   };
 
-  componentDidMount() {
-    console.log(this.pinRef.current);
-  }
-
   render() {
     return (
       <div className="App">
@@ -70,6 +67,7 @@ class App extends Component {
             />
             <button type="submit">Give me access</button>
           </form>
+          <img src={logo} alt="Logo" />
         </header>
         {/* <small className="github-link">
           Made with <i className="fa fa-heart" /> by&nbsp;
