@@ -50,9 +50,8 @@ class App extends Component {
             <PinInput
               ref={this.pinRef}
               length={6}
-              secret
               onChange={(value, index) => {}}
-              type="password"
+              type="custom"
               style={{ padding: '10px' }}
               inputStyle={{
                 borderColor: 'white',
