@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>The Code</h1>
+          <h1 className="title">The Code</h1>
           <BibleVerse verse={this.state.verse} />
 
           <form onSubmit={this.handleSubmit}>
@@ -54,8 +54,8 @@ class App extends Component {
               type="custom"
               style={{ padding: '10px' }}
               inputStyle={{
-                borderColor: 'white',
-                color: 'white',
+                borderColor: '#222',
+                color: '#111',
                 fontSize: '2rem'
               }}
               inputFocusStyle={{ borderColor: '#02D100' }}
