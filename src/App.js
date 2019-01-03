@@ -39,6 +39,10 @@ class App extends Component {
     }
   };
 
+  componentDidMount() {
+    console.log(this.pinRef.current);
+  }
+
   render() {
     return (
       <div className="App">
@@ -48,6 +52,7 @@ class App extends Component {
 
           <form onSubmit={this.handleSubmit}>
             <PinInput
+              focus
               ref={this.pinRef}
               length={6}
               onChange={(value, index) => {}}
@@ -66,7 +71,7 @@ class App extends Component {
             <button type="submit">Give me access</button>
           </form>
         </header>
-        <small className="github-link">
+        {/* <small className="github-link">
           Made with <i className="fa fa-heart" /> by&nbsp;
           <a
             href="https://github.com/devbysalas/the-code-random-bible-verses"
@@ -75,7 +80,7 @@ class App extends Component {
           >
             Carlos Alfaro
           </a>
-        </small>
+        </small> */}
       </div>
     );
   }
