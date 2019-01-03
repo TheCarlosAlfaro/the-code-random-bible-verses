@@ -7,10 +7,10 @@ import PinInput from 'react-pin-input';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.pinRef = React.createRef();
     this.state = {
       verse: 'Enter the code to get access',
-      password: '',
-      showForm: true
+      password: ''
     };
   }
 
@@ -21,13 +21,21 @@ class App extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state.password);
+
     if (this.state.password === '') {
+      const node = this.pinRef.current;
       this.setState({ verse: 'You have to enter the code' });
+      node.elements[0].focus();
     } else if (this.state.password === 'JER333') {
       this.generateVerse();
     } else {
       this.setState({ verse: 'Wrong code, try again' });
+      this.setState({ password: '' });
+      const node = this.pinRef.current;
+      node.elements.forEach(function(pinItem) {
+        pinItem.setState({ value: '' });
+      });
+      node.elements[0].focus();
     }
   };
 
@@ -38,8 +46,9 @@ class App extends Component {
           <h1>The Code</h1>
           <BibleVerse verse={this.state.verse} />
 
-          <form onSubmit={this.handleSubmit} noValidate>
+          <form onSubmit={this.handleSubmit}>
             <PinInput
+              ref={this.pinRef}
               length={6}
               secret
               onChange={(value, index) => {}}
@@ -54,7 +63,6 @@ class App extends Component {
               onComplete={(value, index) => {
                 this.setState({ password: value });
               }}
-              noValidate
             />
             <button type="submit">Give me access</button>
           </form>
