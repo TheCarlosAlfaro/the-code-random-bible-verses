@@ -8,18 +8,27 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      verse: 'Enter the code to get access'
+      verse: 'Enter the code to get access',
+      password: '',
+      showForm: true
     };
   }
 
-  generateVerse(value) {
+  generateVerse() {
     let verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
     this.setState({ verse: verse });
   }
 
   handleSubmit = e => {
     e.preventDefault();
-    this.generateVerse(e.value);
+    console.log(this.state.password);
+    if (this.state.password === '') {
+      this.setState({ verse: 'You have to enter the code' });
+    } else if (this.state.password === 'JER333') {
+      this.generateVerse();
+    } else {
+      this.setState({ verse: 'Wrong code, try again' });
+    }
   };
 
   render() {
@@ -28,6 +37,7 @@ class App extends Component {
         <header className="App-header">
           <h1>The Code</h1>
           <BibleVerse verse={this.state.verse} />
+
           <form onSubmit={this.handleSubmit} noValidate>
             <PinInput
               length={6}
@@ -41,7 +51,9 @@ class App extends Component {
                 fontSize: '2rem'
               }}
               inputFocusStyle={{ borderColor: '#02D100' }}
-              onComplete={(value, index) => {}}
+              onComplete={(value, index) => {
+                this.setState({ password: value });
+              }}
               noValidate
             />
             <button type="submit">Give me access</button>
