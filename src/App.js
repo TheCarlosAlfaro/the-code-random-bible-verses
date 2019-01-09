@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { bibleVerses, resources } from '../src/theCodeBibleVerses.json';
+import { resources } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
 import logo from './logo.png';
@@ -9,6 +9,7 @@ import {
   FacebookShareCount,
   FacebookIcon
 } from 'react-share';
+import ReactPlayer from 'react-player';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +17,8 @@ class App extends Component {
     this.pinRef = React.createRef();
     this.state = {
       verse: 'Introduzca el código para obtener acceso',
-      password: ''
+      password: '',
+      showVideo: false
     };
   }
 
@@ -35,6 +37,7 @@ class App extends Component {
       node.elements[0].focus();
     } else if (this.state.password === 'JER333') {
       this.generateVerse();
+      this.setState({ showVideo: true });
     } else {
       this.setState({ verse: 'código incorrecto, vuelva a intentarlo' });
       this.setState({ password: '' });
@@ -55,7 +58,11 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} alt="Logo" className="App-logo" />
           <h1 className="title">The Code</h1>
+
           <BibleVerse verse={this.state.verse} />
+          {this.state.showVideo ? (
+            <ReactPlayer url="https://aguilascfc.wistia.com/medias/cbvrghbxqx" />
+          ) : null}
           <form onSubmit={this.handleSubmit}>
             <PinInput
               focus
@@ -83,7 +90,7 @@ class App extends Component {
             className="fb-buttton"
             url={url}
             quote="¿Quieres saber el código?"
-            hashtag="#thecodejer333"
+            hashtag="#THECODEJER333"
           >
             <FacebookIcon size={52} round={true} />
             <FacebookShareCount url={url} />
