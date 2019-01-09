@@ -6,7 +6,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-pin-input": "^0.8.0",
-    "react-scripts": "2.1.2"
+    "react-scripts": "2.1.2",
+    "react-share": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

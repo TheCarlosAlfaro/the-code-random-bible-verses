@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import { bibleVerses } from '../src/theCodeBibleVerses.json';
+import { bibleVerses, resources } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
 import logo from './logo.png';
+import {
+  FacebookShareButton,
+  FacebookShareCount,
+  FacebookIcon
+} from 'react-share';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.pinRef = React.createRef();
     this.state = {
-      verse: 'Enter the code to get access',
+      verse: 'Introduzca el código para obtener acceso',
       password: ''
     };
   }
 
   generateVerse() {
-    let verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
+    // let verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
+    let verse = resources.weeklyVerse;
     this.setState({ verse: verse });
   }
 
@@ -25,12 +31,12 @@ class App extends Component {
 
     if (this.state.password === '') {
       const node = this.pinRef.current;
-      this.setState({ verse: 'You have to enter the code' });
+      this.setState({ verse: 'Tiene que introducir el código' });
       node.elements[0].focus();
     } else if (this.state.password === 'JER333') {
       this.generateVerse();
     } else {
-      this.setState({ verse: 'Wrong code, try again' });
+      this.setState({ verse: 'código incorrecto, vuelva a intentarlo' });
       this.setState({ password: '' });
       const node = this.pinRef.current;
       node.elements.forEach(function(pinItem) {
@@ -41,12 +47,15 @@ class App extends Component {
   };
 
   render() {
+    let url = 'http://aguilascfc.org';
+    // let appId = '1792125874189569';
+
     return (
       <div className="App">
         <header className="App-header">
+          <img src={logo} alt="Logo" className="App-logo" />
           <h1 className="title">The Code</h1>
           <BibleVerse verse={this.state.verse} />
-
           <form onSubmit={this.handleSubmit}>
             <PinInput
               focus
@@ -65,9 +74,20 @@ class App extends Component {
                 this.setState({ password: value });
               }}
             />
-            <button type="submit">Give me access</button>
+            <button type="submit">OBTENER ACCESO</button>
           </form>
-          <img src={logo} alt="Logo" />
+          <p className="subtitle">
+            ¡Comparte esta página con tus amigos y familiares!
+          </p>
+          <FacebookShareButton
+            className="fb-buttton"
+            url={url}
+            quote="¿Quieres saber el código?"
+            hashtag="#thecodejer333"
+          >
+            <FacebookIcon size={52} round={true} />
+            <FacebookShareCount url={url} />
+          </FacebookShareButton>
         </header>
         {/* <small className="github-link">
           Made with <i className="fa fa-heart" /> by&nbsp;
