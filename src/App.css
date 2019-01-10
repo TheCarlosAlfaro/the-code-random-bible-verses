@@ -81,6 +81,7 @@ button:focus {
 .SocialMediaShareCount {
   color: #fff;
   font-size: .8rem;
+  text-align: center;
 }
 
 .github-link {

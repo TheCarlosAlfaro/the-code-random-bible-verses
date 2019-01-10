@@ -4,6 +4,7 @@ import { successMessage } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
 import logo from './the-code-logo.png';
+import logo2 from './the-code-no-verse.png';
 import {
   FacebookShareButton,
   FacebookShareCount,
@@ -63,8 +64,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className={appHeaderClassName}>
-          <img src={logo} alt="Logo" className="App-logo" />
-          <p className="subtitle">
+          {this.state.showVideo ? (
+            <img src={logo} alt="Logo" className="App-logo" />
+          ) : (
+            <img src={logo2} alt="Logo" className="App-logo" />
+          )}
+          <p className="subtitle text-center">
             ¡Comparte esta página con tus amigos y familiares!
           </p>
           <FacebookShareButton
@@ -105,7 +110,7 @@ class App extends Component {
         </header>
         {this.state.showVideo ? (
           <div className="container">
-            <p className="sub-heading">Versiculo</p>
+            <p className="sub-heading">Versículo de esta semana</p>
             <div className="verse">
               <p>
                 <small>14</small> Y ésta es la confianza que tenemos en él: si
@@ -114,7 +119,7 @@ class App extends Component {
                 <strong>1 John 5:14</strong>
               </p>
             </div>
-            <p className="sub-heading">Oración</p>
+            <p className="sub-heading">Repita esta oración</p>
             <div className="verse">
               <p>
                 <strong>Repita esta oracion: </strong>
