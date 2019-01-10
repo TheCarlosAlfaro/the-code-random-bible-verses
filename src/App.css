@@ -3,7 +3,9 @@
 }
 
 .App-logo {
-  max-width: 70px;
+  margin-top: .5rem;
+  width: 500px;
+  max-width: 80%;
 }
 
 .App-header {
@@ -31,7 +33,7 @@
 }
 
 button {
-  background-color: #02f000;
+  background-color: #0155E2;
   font-size: 1.5rem;
   border: none;
   box-shadow: none;
@@ -42,7 +44,7 @@ button {
 }
 
 button:hover {
-  background-color: #02d100;
+  background-color: #0763fe;
   cursor: pointer;
 }
 
@@ -51,11 +53,21 @@ button:focus {
 }
 
 .subtitle {
-  color: #4c4c4c
+  color: #4c4c4c;
+  font-size: 1.2rem;
+}
+
+.sub-heading {
+  color: #111;
+  font-size: 2rem;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #0763fe;
 }
 
 .SocialMediaShareCount {
   color: #111;
+  font-size: .8rem;
 }
 
 .github-link {
@@ -73,4 +85,40 @@ button:focus {
 
 .fa-heart {
   color: red;
+}
+
+.video-player {
+  max-width: 100%;
+  padding: 50px;
+}
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% 
+}
+ 
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  padding: .5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.video-container {
+  margin: 1rem;;
+}
+
+.verse {
+  font-size: 1.5rem;
+  background-color: #F0EDEE;
+  display: inline-block;
+  max-width: 700px;
+  padding: 0 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  color: #111;
 }

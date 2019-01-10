@@ -1,4 +1,4 @@
-.verse {
+.instructions {
   background-color: white;
   display: inline-block;
   max-width: 700px;
@@ -8,7 +8,7 @@
   color: #111;
 }
 
-.verseError {
+.instructionsError {
   background-color: red;
   display: inline-block;
   max-width: 700px;

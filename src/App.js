@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { resources } from '../src/theCodeBibleVerses.json';
+import { successMessage } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
-import logo from './logo.png';
+import logo from './logo-black.png';
 import {
   FacebookShareButton,
   FacebookShareCount,
@@ -24,7 +24,7 @@ class App extends Component {
 
   generateVerse() {
     // let verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
-    let verse = resources.weeklyVerse;
+    let verse = successMessage;
     this.setState({ verse: verse });
   }
 
@@ -51,38 +51,13 @@ class App extends Component {
 
   render() {
     let url = 'http://aguilascfc.org';
+    const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
     // let appId = '1792125874189569';
 
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} alt="Logo" className="App-logo" />
-          <h1 className="title">The Code</h1>
-
-          <BibleVerse verse={this.state.verse} />
-          {this.state.showVideo ? (
-            <ReactPlayer url="https://aguilascfc.wistia.com/medias/cbvrghbxqx" />
-          ) : null}
-          <form onSubmit={this.handleSubmit}>
-            <PinInput
-              focus
-              ref={this.pinRef}
-              length={6}
-              onChange={(value, index) => {}}
-              type="custom"
-              style={{ padding: '10px' }}
-              inputStyle={{
-                borderColor: '#222',
-                color: '#111',
-                fontSize: '2rem'
-              }}
-              inputFocusStyle={{ borderColor: '#02D100' }}
-              onComplete={(value, index) => {
-                this.setState({ password: value });
-              }}
-            />
-            <button type="submit">OBTENER ACCESO</button>
-          </form>
           <p className="subtitle">
             ¡Comparte esta página con tus amigos y familiares!
           </p>
@@ -92,10 +67,73 @@ class App extends Component {
             quote="¿Quieres saber el código?"
             hashtag="#THECODEJER333"
           >
-            <FacebookIcon size={52} round={true} />
+            <FacebookIcon size={45} round={true} />
             <FacebookShareCount url={url} />
           </FacebookShareButton>
+          {/* <h1 className="title">The Code</h1> */}
+
+          <BibleVerse verse={this.state.verse} />
+
+          {this.state.showVideo ? null : (
+            <form onSubmit={this.handleSubmit}>
+              <PinInput
+                focus
+                ref={this.pinRef}
+                length={6}
+                onChange={(value, index) => {}}
+                type="custom"
+                style={{ padding: '10px' }}
+                inputStyle={{
+                  borderColor: '#222',
+                  fontSize: '2rem',
+                  color: '#111'
+                }}
+                inputFocusStyle={{ borderColor: '#0155E2' }}
+                onComplete={(value, index) => {
+                  this.setState({ password: value });
+                }}
+              />
+              <button type="submit">OBTENER ACCESO</button>
+            </form>
+          )}
         </header>
+        {this.state.showVideo ? (
+          <div className="container">
+            <p className="sub-heading">Versiculo</p>
+            <div className="verse">
+              <p>
+              <small>14</small> Y ésta es la confianza que tenemos en él: si pedimos algo según su voluntad, él nos oye.
+                <br />
+                <strong>1 John 5:14</strong>
+              </p>
+            </div>
+            <p className="sub-heading">Oración</p>
+            <div className="verse">
+              <p>
+                <strong>Repita esta oracion: </strong>
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+                Declaro que mi familia es salva
+              </p>
+            </div>
+            <p className="sub-heading">Video</p>
+            <div className="video-container">
+              <div className="player-wrapper">
+                <ReactPlayer
+                  className="react-player"
+                  url={videoUrl}
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+        ) : null}
+
         {/* <small className="github-link">
           Made with <i className="fa fa-heart" /> by&nbsp;
           <a
