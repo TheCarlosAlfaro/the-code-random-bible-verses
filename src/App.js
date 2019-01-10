@@ -8,7 +8,13 @@ import logo2 from './the-code-no-verse.png';
 import {
   FacebookShareButton,
   FacebookShareCount,
-  FacebookIcon
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  EmailShareButton,
+  EmailIcon
 } from 'react-share';
 import ReactPlayer from 'react-player';
 
@@ -72,15 +78,52 @@ class App extends Component {
           <p className="subtitle text-center">
             ¡Comparte esta página con tus amigos y familiares!
           </p>
-          <FacebookShareButton
-            className="fb-buttton"
-            url={url}
-            quote="¿Quieres saber el código?"
-            hashtag="#THECODEJER333"
-          >
-            <FacebookIcon size={45} round={true} />
-            <FacebookShareCount url={url} />
-          </FacebookShareButton>
+
+          <div className="social-container">
+            <FacebookShareButton
+              className="fb-buttton"
+              url={url}
+              quote="¿Quieres saber el código?"
+              hashtag="#THECODEJER333"
+            >
+              <FacebookIcon
+                size={50}
+                round={true}
+                logoFillColor="#3A5A98"
+                iconBgStyle={{ fill: '#fff' }}
+              />
+              <FacebookShareCount url={url} />
+            </FacebookShareButton>
+            <TwitterShareButton
+              url={url}
+              title="The Code"
+              via="aguilascfc"
+              hashtags={['THECODEJER333', 'aguilascfc']}
+            >
+              <TwitterIcon
+                size={50}
+                round={true}
+                logoFillColor="#01ACED"
+                iconBgStyle={{ fill: '#fff' }}
+              />
+            </TwitterShareButton>
+            <WhatsappShareButton url={url} title="The Code" separator=" ">
+              <WhatsappIcon
+                size={50}
+                round={true}
+                logoFillColor="#2CB743"
+                iconBgStyle={{ fill: '#fff' }}
+              />
+            </WhatsappShareButton>
+            <EmailShareButton url={url} subject="The Code">
+              <EmailIcon
+                size={50}
+                round={true}
+                logoFillColor="#7F7F7F"
+                iconBgStyle={{ fill: '#fff' }}
+              />
+            </EmailShareButton>
+          </div>
           {/* <h1 className="title">The Code</h1> */}
 
           <BibleVerse verse={this.state.verse} />

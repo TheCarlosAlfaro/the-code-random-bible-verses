@@ -140,3 +140,12 @@ button:focus {
 .text-center {
   text-align: center;
 }
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.SocialMediaShareButton {
+  padding: .5rem;
+}
