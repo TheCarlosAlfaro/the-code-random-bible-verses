@@ -53,6 +53,8 @@ class App extends Component {
     let url = 'http://aguilascfc.org';
     const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
     // let appId = '1792125874189569';
+    const bosquejoUrl =
+      'https://www.aguilascfc.org/wp-content/uploads/2019/01/LAS-METAS-QUE-DIOS-BENDICE.pdf';
     let appHeaderClassName = 'App-header';
     if (this.state.showVideo) {
       appHeaderClassName += 'Success';
@@ -124,12 +126,19 @@ class App extends Component {
             </div>
             <p className="sub-heading">Tips</p>
             <div className="verse">
-              <p>
-                <ul>
-                  <li>Eat right</li>
-                  <li>Sleet well</li>
-                  <li>Love God</li>
-                </ul>
+              <ul>
+                <li>Eat right</li>
+                <li>Sleet well</li>
+                <li>Love God</li>
+              </ul>
+            </div>
+            <p className="sub-heading">Bosquejo</p>
+            <div className="verse">
+              <p className="text-center">
+                <a href={bosquejoUrl} target="_blank" rel="noopener noreferrer">
+                  ¡Puedes descargar el bosquejo aquí!
+                </a>
+                <br />
               </p>
             </div>
             <p className="sub-heading">Video</p>
