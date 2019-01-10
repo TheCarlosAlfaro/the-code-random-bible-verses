@@ -9,8 +9,18 @@
 }
 
 .App-header {
-  background-color: #F0EDEE;
+  background-image: url("https://www.aguilascfc.org/wp-content/uploads/2019/01/BACKGROUND.jpg");
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-headerSuccess {
+  background-image: url("https://www.aguilascfc.org/wp-content/uploads/2019/01/BACKGROUND.jpg");
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +63,8 @@ button:focus {
 }
 
 .subtitle {
-  color: #4c4c4c;
+  /* color: #4c4c4c; */
+  color: #fff;
   font-size: 1.2rem;
 }
 

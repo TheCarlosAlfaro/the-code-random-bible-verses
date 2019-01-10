@@ -3,7 +3,7 @@ import './App.css';
 import { successMessage } from '../src/theCodeBibleVerses.json';
 import BibleVerse from './components/BibleVerse';
 import PinInput from 'react-pin-input';
-import logo from './logo-black.png';
+import logo from './the-code-logo.png';
 import {
   FacebookShareButton,
   FacebookShareCount,
@@ -53,10 +53,14 @@ class App extends Component {
     let url = 'http://aguilascfc.org';
     const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
     // let appId = '1792125874189569';
+    let appHeaderClassName = 'App-header';
+    if (this.state.showVideo) {
+      appHeaderClassName += 'Success';
+    }
 
     return (
       <div className="App">
-        <header className="App-header">
+        <header className={appHeaderClassName}>
           <img src={logo} alt="Logo" className="App-logo" />
           <p className="subtitle">
             ¡Comparte esta página con tus amigos y familiares!
@@ -84,11 +88,11 @@ class App extends Component {
                 type="custom"
                 style={{ padding: '10px' }}
                 inputStyle={{
-                  borderColor: '#222',
+                  borderColor: '#fff',
                   fontSize: '2rem',
-                  color: '#111'
+                  color: '#fff'
                 }}
-                inputFocusStyle={{ borderColor: '#0155E2' }}
+                inputFocusStyle={{ borderColor: '#FF0000' }}
                 onComplete={(value, index) => {
                   this.setState({ password: value });
                 }}
@@ -102,7 +106,8 @@ class App extends Component {
             <p className="sub-heading">Versiculo</p>
             <div className="verse">
               <p>
-              <small>14</small> Y ésta es la confianza que tenemos en él: si pedimos algo según su voluntad, él nos oye.
+                <small>14</small> Y ésta es la confianza que tenemos en él: si
+                pedimos algo según su voluntad, él nos oye.
                 <br />
                 <strong>1 John 5:14</strong>
               </p>
@@ -111,13 +116,20 @@ class App extends Component {
             <div className="verse">
               <p>
                 <strong>Repita esta oracion: </strong>
+                Declaro que mi familia es salva Declaro que mi familia es salva
+                Declaro que mi familia es salva Declaro que mi familia es salva
+                Declaro que mi familia es salva Declaro que mi familia es salva
                 Declaro que mi familia es salva
-                Declaro que mi familia es salva
-                Declaro que mi familia es salva
-                Declaro que mi familia es salva
-                Declaro que mi familia es salva
-                Declaro que mi familia es salva
-                Declaro que mi familia es salva
+              </p>
+            </div>
+            <p className="sub-heading">Tips</p>
+            <div className="verse">
+              <p>
+                <ul>
+                  <li>Eat right</li>
+                  <li>Sleet well</li>
+                  <li>Love God</li>
+                </ul>
               </p>
             </div>
             <p className="sub-heading">Video</p>
