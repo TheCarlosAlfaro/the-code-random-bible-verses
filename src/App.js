@@ -153,34 +153,43 @@ class App extends Component {
         </header>
         {this.state.showVideo ? (
           <div className="container">
-            <p className="sub-heading">Versículo de esta semana</p>
-            <div className="verse">
+            <p className="sub-heading">Versículo de esta semana.</p>
+            <div className="verse__container verse">
               <p>
-                <small>14</small> Y ésta es la confianza que tenemos en él: si
-                pedimos algo según su voluntad, él nos oye.
+                <small>14</small> En cierta ocasión, Jesús estaba orando en un
+                lugar y, cuando terminó, uno de sus discípulos le dijo: «Señor,
+                enséñanos a orar, así como Juan enseñó a sus discípulos.».
                 <br />
-                <strong>1 John 5:14</strong>
+                <strong className="verse__ref">(Lucas 11:1 RVC)</strong>
               </p>
             </div>
-            <p className="sub-heading">Repita esta oración</p>
+            <p className="sub-heading">Oración de esta semana.</p>
             <div className="verse">
               <p>
-                <strong>Repita esta oracion: </strong>
-                Declaro que mi familia es salva Declaro que mi familia es salva
-                Declaro que mi familia es salva Declaro que mi familia es salva
-                Declaro que mi familia es salva Declaro que mi familia es salva
-                Declaro que mi familia es salva
+                “Señor he entendido la importancia de orar, pues, la oración es
+                la llave para conectar contigo, es la “defensa” que nos has
+                dejado para todo lo que enfrentamos en esta vida.
+                <br />
+                <br />
+                Te pido que pongas en mi hambre por conocerte más, hambre por
+                orar y buscarte cada mañana. Pon en mi esa necesidad de pasar
+                más tiempo contigo ya que mi alma tiene sed de ti” Amen.
               </p>
             </div>
-            <p className="sub-heading">Tips</p>
+            <p className="sub-heading">Tips para orar.</p>
             <div className="verse">
               <ul>
-                <li>Eat right</li>
-                <li>Sleet well</li>
-                <li>Love God</li>
+                <li>
+                  Encuentra un espacio de quietud, cuando los hijos ya se fueron
+                  a la escuela, o a dormir, o antes de irte a trabajar; a la
+                  hora que se te acomode, pero sin bullicio, pues tu oración
+                  debe ser en lo secreto cerrada la puerta.
+                  <strong>(Mateo 6:6)</strong>
+                </li>
+                <li>Apaga tu teléfono para que nada te distraiga.</li>
               </ul>
             </div>
-            <p className="sub-heading">Bosquejo</p>
+            <p className="sub-heading">Bosquejo digital.</p>
             <div className="verse">
               <p className="text-center">
                 <a href={bosquejoUrl} target="_blank" rel="noopener noreferrer">
@@ -189,7 +198,7 @@ class App extends Component {
                 <br />
               </p>
             </div>
-            <p className="sub-heading">Video</p>
+            <p className="sub-heading">Enseñanza en video.</p>
             <div className="video-container">
               <div className="player-wrapper">
                 <ReactPlayer
@@ -200,19 +209,30 @@ class App extends Component {
                 />
               </div>
             </div>
+            <div className="github-link">
+              {/* <small className="github-link">
+                Made with <i className="fa fa-heart" /> by&nbsp;
+                <a
+                  href="https://github.com/devbysalas/the-code-random-bible-verses"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Carlos Alfaro
+                </a>
+              </small> */}
+              <small className="github-link">
+                Made with <i className="fa fa-heart" /> by&nbsp;
+                <a
+                  href="https://aguilascfc.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Aguilas Centro Familiar Cristiano.
+                </a>
+              </small>
+            </div>
           </div>
         ) : null}
-
-        {/* <small className="github-link">
-          Made with <i className="fa fa-heart" /> by&nbsp;
-          <a
-            href="https://github.com/devbysalas/the-code-random-bible-verses"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Carlos Alfaro
-          </a>
-        </small> */}
       </div>
     );
   }

@@ -85,10 +85,7 @@ button:focus {
 }
 
 .github-link {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
 }
 
 .github-link a {
@@ -148,4 +145,8 @@ button:focus {
 
 .SocialMediaShareButton {
   padding: .5rem;
+}
+
+.verse__ref {
+  float: right;
 }
