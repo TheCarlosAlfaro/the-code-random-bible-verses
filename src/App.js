@@ -61,7 +61,7 @@ class App extends Component {
     const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
     // let appId = '1792125874189569';
     const bosquejoUrl =
-      'https://www.aguilascfc.org/wp-content/uploads/2019/01/LAS-METAS-QUE-DIOS-BENDICE.pdf';
+      'https://www.aguilascfc.org/wp-content/uploads/2019/01/1-MIS-DEFENSAS-BASE.pdf';
     let appHeaderClassName = 'App-header';
     if (this.state.showVideo) {
       appHeaderClassName += 'Success';
@@ -198,7 +198,7 @@ class App extends Component {
                 <br />
               </p>
             </div>
-            <p className="sub-heading">Enseñanza en video.</p>
+            {/* <p className="sub-heading">Enseñanza en video.</p>
             <div className="video-container">
               <div className="player-wrapper">
                 <ReactPlayer
@@ -208,7 +208,7 @@ class App extends Component {
                   height="100%"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="github-link">
               {/* <small className="github-link">
                 Made with <i className="fa fa-heart" /> by&nbsp;
