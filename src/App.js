@@ -57,7 +57,7 @@ class App extends Component {
   };
 
   render() {
-    let url = 'http://aguilascfc.org';
+    let url = 'http://aguilascfc.org/thecode';
     const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
     // let appId = '1792125874189569';
     const bosquejoUrl =
