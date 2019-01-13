@@ -58,10 +58,10 @@ class App extends Component {
 
   render() {
     let url = 'http://aguilascfc.org/thecode';
-    const videoUrl = 'https://aguilascfc.wistia.com/medias/xz6o9y2tjc';
+    const videoUrl = 'https://aguilascfc.wistia.com/medias/zirv3ummzc';
     // let appId = '1792125874189569';
     const bosquejoUrl =
-      'https://www.aguilascfc.org/wp-content/uploads/2019/01/1-MIS-DEFENSAS-BASE.pdf';
+      'https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf';
     let appHeaderClassName = 'App-header';
     if (this.state.showVideo) {
       appHeaderClassName += 'Success';
@@ -156,24 +156,37 @@ class App extends Component {
             <p className="sub-heading">Versículo de esta semana.</p>
             <div className="verse__container verse">
               <p>
-                <small>14</small> En cierta ocasión, Jesús estaba orando en un
-                lugar y, cuando terminó, uno de sus discípulos le dijo: «Señor,
-                enséñanos a orar, así como Juan enseñó a sus discípulos.».
+                <small>3</small> Clama a mí, y yo te responderé, y te enseñaré
+                cosas grandes y ocultas que tú no conoces.
                 <br />
-                <strong className="verse__ref">(Lucas 11:1 RVC)</strong>
+                <strong className="verse__ref">(Jer. 33:3 RVC)</strong>
               </p>
             </div>
             <p className="sub-heading">Oración de esta semana.</p>
             <div className="verse">
               <p>
-                “Señor he entendido la importancia de orar, pues, la oración es
-                la llave para conectar contigo, es la “defensa” que nos has
-                dejado para todo lo que enfrentamos en esta vida.
+                Padre, ayúdame a desarrollar mi vida de oración este año como
+                nunca antes. Quiero ponerte a ti primero en todas las áreas de
+                mi vida. Ayúdame para que esta serie de la oración sea algo más
+                que conocimiento y teoría. Quiero pasar a otro nivel en mi vida
+                de oración. Quiero alimentar mi alma y espíritu con la misma
+                abundancia que alimento mi cuerpo.
                 <br />
                 <br />
-                Te pido que pongas en mi hambre por conocerte más, hambre por
-                orar y buscarte cada mañana. Pon en mi esa necesidad de pasar
-                más tiempo contigo ya que mi alma tiene sed de ti” Amen.
+                Espíritu Santo, te pido tu ayuda. Enséñame a orar, ayúdame a
+                desarrollar la disciplina para orar. No quiero que mi oración
+                sea aburrida, no quiero orar por obligación, ni por
+                culpabilidad, ni por religiosidad, enséñame a disfrutar los
+                momentos de intimidad contigo.
+                <br />
+                <br />
+                Señor, ayúdame a eliminar las distracciones en estas siguientes
+                semanas, a vencer las tentaciones, a desarrollar el hábito de
+                tener una cita diaria contigo.
+                <br />
+                <br />
+                Padre yo sé que no podré hacerlo solo, dame la ayuda de tu
+                Espíritu Santo. Te lo pido en el nombre de Jesús, amén.
               </p>
             </div>
             <p className="sub-heading">Tips para orar.</p>
@@ -198,7 +211,7 @@ class App extends Component {
                 <br />
               </p>
             </div>
-            {/* <p className="sub-heading">Enseñanza en video.</p>
+            <p className="sub-heading">Enseñanza en video.</p>
             <div className="video-container">
               <div className="player-wrapper">
                 <ReactPlayer
@@ -208,7 +221,7 @@ class App extends Component {
                   height="100%"
                 />
               </div>
-            </div> */}
+            </div>
             <div className="github-link">
               {/* <small className="github-link">
                 Made with <i className="fa fa-heart" /> by&nbsp;
