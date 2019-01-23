@@ -58,7 +58,7 @@ class App extends Component {
 
   render() {
     let url = 'http://aguilascfc.org/thecode';
-    const videoUrl = 'https://aguilascfc.wistia.com/medias/zirv3ummzc';
+    const videoUrl = 'https://aguilascfc.wistia.com/medias/eb4leci4bq';
     // let appId = '1792125874189569';
     const bosquejoUrl =
       'https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf';
@@ -156,10 +156,10 @@ class App extends Component {
             <p className="sub-heading">Versículo de esta semana.</p>
             <div className="verse__container verse">
               <p>
-                <small>3</small> Clama a mí, y yo te responderé, y te enseñaré
-                cosas grandes y ocultas que tú no conoces.
+                <small>13</small> ¡Así que ustedes también deben estar alerta!
+                Porque no saben el día ni la hora de mi regreso.
                 <br />
-                <strong className="verse__ref">(Jer. 33:3 RVC)</strong>
+                <strong className="verse__ref">(Mateo 25:13 NTV)</strong>
               </p>
             </div>
             <p className="sub-heading">Oración de esta semana.</p>
@@ -167,9 +167,12 @@ class App extends Component {
               <p>
                 Padre, ayúdame a desarrollar mi vida de oración este año como
                 nunca antes. Quiero ponerte a ti primero en todas las áreas de
-                mi vida. Ayúdame para que esta serie de la oración sea algo más
-                que conocimiento y teoría. Quiero pasar a otro nivel en mi vida
-                de oración. Quiero alimentar mi alma y espíritu con la misma
+                mi vida.
+                <br />
+                <br />
+                Ayúdame para que esta serie de la oración sea algo más que
+                conocimiento y teoría. Quiero pasar a otro nivel en mi vida de
+                oración. Quiero alimentar mi alma y espíritu con la misma
                 abundancia que alimento mi cuerpo.
                 <br />
                 <br />
@@ -195,8 +198,8 @@ class App extends Component {
                 <li>
                   Encuentra un espacio de quietud, cuando los hijos ya se fueron
                   a la escuela, o a dormir, o antes de irte a trabajar; a la
-                  hora que se te acomode, pero sin bullicio, pues tu oración
-                  debe ser en lo secreto cerrada la puerta.
+                  hora que se te acomode, pero sin ruido, pues tu oración debe
+                  ser en lo secreto cerrada la puerta.
                   <strong>(Mateo 6:6)</strong>
                 </li>
                 <li>Apaga tu teléfono para que nada te distraiga.</li>
