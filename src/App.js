@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import './App.css';
-import { successMessage } from '../src/theCodeBibleVerses.json';
-import BibleVerse from './components/BibleVerse';
-import PinInput from 'react-pin-input';
-import logo from './the-code-logo.png';
-import logo2 from './the-code-no-verse.png';
+import React, { Component } from "react";
+import "./App.css";
+import { successMessage } from "../src/theCodeBibleVerses.json";
+import BibleVerse from "./components/BibleVerse";
+import PinInput from "react-pin-input";
+import logo from "./the-code-logo.png";
+import logo2 from "./the-code-no-verse.png";
 import {
   FacebookShareButton,
   FacebookShareCount,
@@ -15,16 +15,16 @@ import {
   WhatsappIcon,
   EmailShareButton,
   EmailIcon
-} from 'react-share';
-import ReactPlayer from 'react-player';
+} from "react-share";
+import ReactPlayer from "react-player";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.pinRef = React.createRef();
     this.state = {
-      verse: 'Introduzca el código para obtener acceso',
-      password: '',
+      verse: "Introduzca el código para obtener acceso",
+      password: "",
       showVideo: false
     };
   }
@@ -38,33 +38,33 @@ class App extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    if (this.state.password === '') {
+    if (this.state.password === "") {
       const node = this.pinRef.current;
-      this.setState({ verse: 'Tiene que introducir el código' });
+      this.setState({ verse: "Tiene que introducir el código" });
       node.elements[0].focus();
-    } else if (this.state.password === 'JER333') {
+    } else if (this.state.password === "JER333") {
       this.generateVerse();
       this.setState({ showVideo: true });
     } else {
-      this.setState({ verse: 'código incorrecto, vuelva a intentarlo' });
-      this.setState({ password: '' });
+      this.setState({ verse: "código incorrecto, vuelva a intentarlo" });
+      this.setState({ password: "" });
       const node = this.pinRef.current;
       node.elements.forEach(function(pinItem) {
-        pinItem.setState({ value: '' });
+        pinItem.setState({ value: "" });
       });
       node.elements[0].focus();
     }
   };
 
   render() {
-    let url = 'http://aguilascfc.org/thecode';
-    const videoUrl = 'https://aguilascfc.wistia.com/medias/eb4leci4bq';
+    let url = "http://aguilascfc.org/thecode";
+    const videoUrl = "https://aguilascfc.wistia.com/medias/a2jy0is1u7";
     // let appId = '1792125874189569';
     const bosquejoUrl =
-      'https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf';
-    let appHeaderClassName = 'App-header';
+      "https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf";
+    let appHeaderClassName = "App-header";
     if (this.state.showVideo) {
-      appHeaderClassName += 'Success';
+      appHeaderClassName += "Success";
     }
 
     return (
@@ -90,7 +90,7 @@ class App extends Component {
                 size={50}
                 round={true}
                 logoFillColor="#3A5A98"
-                iconBgStyle={{ fill: '#fff' }}
+                iconBgStyle={{ fill: "#fff" }}
               />
               <FacebookShareCount url={url} />
             </FacebookShareButton>
@@ -98,13 +98,13 @@ class App extends Component {
               url={url}
               title="The Code"
               via="aguilascfc"
-              hashtags={['THECODEJER333', 'aguilascfc']}
+              hashtags={["THECODEJER333", "aguilascfc"]}
             >
               <TwitterIcon
                 size={50}
                 round={true}
                 logoFillColor="#01ACED"
-                iconBgStyle={{ fill: '#fff' }}
+                iconBgStyle={{ fill: "#fff" }}
               />
             </TwitterShareButton>
             <WhatsappShareButton url={url} title="The Code" separator=" ">
@@ -112,7 +112,7 @@ class App extends Component {
                 size={50}
                 round={true}
                 logoFillColor="#2CB743"
-                iconBgStyle={{ fill: '#fff' }}
+                iconBgStyle={{ fill: "#fff" }}
               />
             </WhatsappShareButton>
             <EmailShareButton url={url} subject="The Code">
@@ -120,7 +120,7 @@ class App extends Component {
                 size={50}
                 round={true}
                 logoFillColor="#7F7F7F"
-                iconBgStyle={{ fill: '#fff' }}
+                iconBgStyle={{ fill: "#fff" }}
               />
             </EmailShareButton>
           </div>
@@ -136,13 +136,13 @@ class App extends Component {
                 length={6}
                 onChange={(value, index) => {}}
                 type="custom"
-                style={{ padding: '10px' }}
+                style={{ padding: "10px" }}
                 inputStyle={{
-                  borderColor: '#fff',
-                  fontSize: '2rem',
-                  color: '#fff'
+                  borderColor: "#fff",
+                  fontSize: "2rem",
+                  color: "#fff"
                 }}
-                inputFocusStyle={{ borderColor: '#FF0000' }}
+                inputFocusStyle={{ borderColor: "#FF0000" }}
                 onComplete={(value, index) => {
                   this.setState({ password: value });
                 }}
@@ -156,53 +156,55 @@ class App extends Component {
             <p className="sub-heading">Versículo de esta semana.</p>
             <div className="verse__container verse">
               <p>
-                <small>13</small> ¡Así que ustedes también deben estar alerta!
-                Porque no saben el día ni la hora de mi regreso.
+                <small>17</small> Oren sin cesar
                 <br />
-                <strong className="verse__ref">(Mateo 25:13 NTV)</strong>
+                <strong className="verse__ref">
+                  (1 Tesalonicenses 5:17 NVI)
+                </strong>
               </p>
             </div>
             <p className="sub-heading">Oración de esta semana.</p>
             <div className="verse">
               <p>
-                Padre, ayúdame a desarrollar mi vida de oración este año como
-                nunca antes. Quiero ponerte a ti primero en todas las áreas de
-                mi vida.
+                Padre, ayúdame a poder orar sin cesar, que cada día, en cada
+                momento y en cada lugar recuerde que Tú estás a mi lado para
+                ayudarme a tener éxito, para escucharme y para guiarme. Ayúdame
+                Espíritu Santo a estar consiente de Tú Presencia en mi vida.
                 <br />
                 <br />
-                Ayúdame para que esta serie de la oración sea algo más que
-                conocimiento y teoría. Quiero pasar a otro nivel en mi vida de
-                oración. Quiero alimentar mi alma y espíritu con la misma
-                abundancia que alimento mi cuerpo.
+                Quiero ser agradecido contigo, hacer tu voluntad, no la mía;
+                quiero escucharte, tener un diálogo contigo, no solo hablar yo;
+                quiero conocerte más, ser más como Tú y adorarte en espíritu y
+                en verdad.
                 <br />
                 <br />
-                Espíritu Santo, te pido tu ayuda. Enséñame a orar, ayúdame a
-                desarrollar la disciplina para orar. No quiero que mi oración
-                sea aburrida, no quiero orar por obligación, ni por
-                culpabilidad, ni por religiosidad, enséñame a disfrutar los
-                momentos de intimidad contigo.
-                <br />
-                <br />
-                Señor, ayúdame a eliminar las distracciones en estas siguientes
-                semanas, a vencer las tentaciones, a desarrollar el hábito de
-                tener una cita diaria contigo.
-                <br />
-                <br />
-                Padre yo sé que no podré hacerlo solo, dame la ayuda de tu
-                Espíritu Santo. Te lo pido en el nombre de Jesús, amén.
+                Ayúdame a mantener mi corazón sano, sin orgullo, siendo humilde
+                para perdonar y pedir perdón. Quiero ser tu mejor amigo y hablar
+                contigo todos los días. Te lo pido en el nombre de Jesús, Amén.
               </p>
             </div>
-            <p className="sub-heading">Tips para orar.</p>
+            <p className="sub-heading">
+              Tips que te ayudarán a “orar sin cesar”:
+            </p>
             <div className="verse">
               <ul>
                 <li>
-                  Encuentra un espacio de quietud, cuando los hijos ya se fueron
-                  a la escuela, o a dormir, o antes de irte a trabajar; a la
-                  hora que se te acomode, pero sin ruido, pues tu oración debe
-                  ser en lo secreto cerrada la puerta.
-                  <strong>(Mateo 6:6)</strong>
+                  Cada día al levantarte dale gracias a Dios por un día más de
+                  vida, por tu familia, por tu salud, por tu trabajo, por todos
+                  Sus beneficios.
                 </li>
-                <li>Apaga tu teléfono para que nada te distraiga.</li>
+                <li>Entrégale tus planes diarios.</li>
+                <li>
+                  Mientras estas manejando, pon música de adoración y aprovecha
+                  ese tiempo de quietud para escucharlo y adorarlo.
+                </li>
+                <li>Sigue el plan de lectura bíblica (3 versículos diarios)</li>
+                <li>
+                  Antes de acostarte, perdona a quien te ofendió en tu día, ora
+                  por esa persona por nombre y pídele perdón a Dios si tu
+                  ofendiste a alguien o hiciste algo que no le agrada y termina
+                  dándole gracias a Dios por su protección para ti y tu familia.
+                </li>
               </ul>
             </div>
             <p className="sub-heading">Bosquejo digital.</p>
