@@ -58,7 +58,7 @@ class App extends Component {
 
   render() {
     let url = "http://aguilascfc.org/thecode";
-    const videoUrl = "https://aguilascfc.wistia.com/medias/a2jy0is1u7";
+    const videoUrl = "https://aguilascfc.wistia.com/medias/1319c2baz4";
     // let appId = '1792125874189569';
     const bosquejoUrl =
       "https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf";
@@ -156,56 +156,76 @@ class App extends Component {
             <p className="sub-heading">Versículo de esta semana.</p>
             <div className="verse__container verse">
               <p>
-                <small>17</small> Oren sin cesar
+                <small>16</small> La oración eficaz del justo puede mucho.
                 <br />
-                <strong className="verse__ref">
-                  (1 Tesalonicenses 5:17 NVI)
-                </strong>
+                <strong className="verse__ref">(Santiago 5:16b RV60)</strong>
               </p>
             </div>
             <p className="sub-heading">Oración de esta semana.</p>
             <div className="verse">
               <p>
-                Padre, ayúdame a poder orar sin cesar, que cada día, en cada
-                momento y en cada lugar recuerde que Tú estás a mi lado para
-                ayudarme a tener éxito, para escucharme y para guiarme. Ayúdame
-                Espíritu Santo a estar consiente de Tú Presencia en mi vida.
+                Padre Celestial, quiero que mis oraciones no tengan estorbo y
+                que lleguen hasta Tú Trono, por eso te pido que me ayudes en mi
+                fe, que pueda ver con tus ojos, viendo las cosas que no son,
+                como ya hechas.
                 <br />
                 <br />
-                Quiero ser agradecido contigo, hacer tu voluntad, no la mía;
-                quiero escucharte, tener un diálogo contigo, no solo hablar yo;
-                quiero conocerte más, ser más como Tú y adorarte en espíritu y
-                en verdad.
+                Te pido perdón por no hacer lo que te agrada, porque sabiendo lo
+                que es bueno, muchas veces no lo hago. Ayúdame a alinearme a tú
+                perfecta voluntad.
                 <br />
                 <br />
-                Ayúdame a mantener mi corazón sano, sin orgullo, siendo humilde
-                para perdonar y pedir perdón. Quiero ser tu mejor amigo y hablar
-                contigo todos los días. Te lo pido en el nombre de Jesús, Amén.
+                Señor examina mi corazón y muéstrame si hay falta de perdón
+                contra alguien, ayúdame a guardar mi corazón sobre toda cosa
+                guardada.
+                <br />
+                <br />
+                Declaro que tengo la mente de Cristo, que mi mente es autopista
+                de tus pensamientos y no es basurero del diablo, pensare en lo
+                bueno, en lo agradable, en lo que tiene virtud y en lo que es
+                digno de alabanza.
+                <br />
+                <br />
+                Te pido que seas el centro de mi hogar, de mi matrimonio y de mi
+                vida. En el nombre de Jesús, Amén.
               </p>
             </div>
             <p className="sub-heading">
-              Tips que te ayudarán a “orar sin cesar”:
+              Tips Para Que Tus Oraciones No Tengan Estorbo
             </p>
             <div className="verse">
-              <ul>
+              <ol>
                 <li>
-                  Cada día al levantarte dale gracias a Dios por un día más de
-                  vida, por tu familia, por tu salud, por tu trabajo, por todos
-                  Sus beneficios.
+                  Habla con Fe. Diariamente dale gracias a Dios por adelantado,
+                  por la respuesta a tus peticiones. Ejemplo: Si estas pidiendo
+                  ser sano, dile: “Gracias Señor porque estoy sano”
                 </li>
-                <li>Entrégale tus planes diarios.</li>
+                <br />
                 <li>
-                  Mientras estas manejando, pon música de adoración y aprovecha
-                  ese tiempo de quietud para escucharlo y adorarlo.
+                  Busca una Promesa de Dios en la Biblia que respalde tu
+                  petición, apréndetela y repítela en tu tiempo de oración.
+                  Ejemplo, para la petición de salvación para tu familia:
+                  “Porque Tú Palabra dice Cree en el Señor Jesucristo, y serás
+                  salvo, tú y tu casa. (Hechos 16:31)
                 </li>
-                <li>Sigue el plan de lectura bíblica (3 versículos diarios)</li>
+                <br />
                 <li>
-                  Antes de acostarte, perdona a quien te ofendió en tu día, ora
-                  por esa persona por nombre y pídele perdón a Dios si tu
-                  ofendiste a alguien o hiciste algo que no le agrada y termina
-                  dándole gracias a Dios por su protección para ti y tu familia.
+                  Si tienes alguna relación dañada, arregla la situación lo
+                  antes posible, pide perdón y perdona.
                 </li>
-              </ul>
+                <br />
+                <li>
+                  En tu oración diaria pídele a Dios que examine tu corazón,
+                  entrégale tus áreas de debilidad y pídele que te ayude a
+                  alinearte a Su voluntad.
+                </li>
+                <br />
+                <li>
+                  Si eres casado y tienes problemas en tu matrimonio, invierte
+                  en tu matrimonio, ve a la cena del amor y la amistad, pide
+                  ayuda a tu mentor, anciano o pastor.
+                </li>
+              </ol>
             </div>
             <p className="sub-heading">Bosquejo digital.</p>
             <div className="verse">
