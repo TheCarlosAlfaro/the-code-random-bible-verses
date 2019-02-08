@@ -153,77 +153,76 @@ class App extends Component {
         </header>
         {this.state.showVideo ? (
           <div className="container">
-            <p className="sub-heading">Versículo de esta semana.</p>
+            <p className="sub-heading">Versículo de esta semana</p>
             <div className="verse__container verse">
               <p>
-                <small>16</small> La oración eficaz del justo puede mucho.
+                <small>5</small> Cuando ustedes oren, no sean como los
+                hipócritas, que aman orar de pie en las sinagogas y en las
+                esquinas de las calles, para ser vistos por los hombres. De
+                cierto les digo que ya tienen su recompensa.
                 <br />
-                <strong className="verse__ref">(Santiago 5:16b RV60)</strong>
+                <strong className="verse__ref">(Mateo 6:5 RVA-2015)</strong>
               </p>
             </div>
-            <p className="sub-heading">Oración de esta semana.</p>
+            <p className="sub-heading">Oración de esta semana</p>
             <div className="verse">
               <p>
-                Padre Celestial, quiero que mis oraciones no tengan estorbo y
-                que lleguen hasta Tú Trono, por eso te pido que me ayudes en mi
-                fe, que pueda ver con tus ojos, viendo las cosas que no son,
-                como ya hechas.
+                Padre Celestial, te doy gracias por el gran privilegio que me
+                das de tener acceso a Tú Presencia a través de la oración.
                 <br />
                 <br />
-                Te pido perdón por no hacer lo que te agrada, porque sabiendo lo
-                que es bueno, muchas veces no lo hago. Ayúdame a alinearme a tú
-                perfecta voluntad.
+                Gracias por considerarme tu amigo, no quiero fallarte, y por eso
+                te pido que tu Espíritu Santo ponga en mí el querer como el
+                hacer, de hablar contigo todos los días, en todo momento y en
+                todo lugar como a mi mejor amigo. Quiero darte lo mejor de mí,
+                así como Tú lo has dado todo por mí.
                 <br />
                 <br />
-                Señor examina mi corazón y muéstrame si hay falta de perdón
-                contra alguien, ayúdame a guardar mi corazón sobre toda cosa
-                guardada.
+                Perdóname por no haber valorado antes tu amor, tu tiempo y tu
+                sacrificio.
                 <br />
                 <br />
-                Declaro que tengo la mente de Cristo, que mi mente es autopista
-                de tus pensamientos y no es basurero del diablo, pensare en lo
-                bueno, en lo agradable, en lo que tiene virtud y en lo que es
-                digno de alabanza.
-                <br />
-                <br />
-                Te pido que seas el centro de mi hogar, de mi matrimonio y de mi
-                vida. En el nombre de Jesús, Amén.
+                Gracias porque a pesar de todo, al momento que te hablo, Tú
+                inclinas tu oído para escucharme, y cuando estoy angustiado,
+                triste, o pasando alguna situación, Tú me inundas de tu paz, de
+                tu amor, renuevas mis fuerzas, me das gozo, me das esperanza y
+                me llenas de fe. Gracias porque sé que siempre estás disponible
+                para mí 24/7. ¡No hay otro amigo como Tú! ¡Te amo!
               </p>
             </div>
             <p className="sub-heading">
-              Tips Para Que Tus Oraciones No Tengan Estorbo
+              Tips para que tu oración sea un estilo de vida
             </p>
             <div className="verse">
               <ol>
                 <li>
-                  Habla con Fe. Diariamente dale gracias a Dios por adelantado,
-                  por la respuesta a tus peticiones. Ejemplo: Si estas pidiendo
-                  ser sano, dile: “Gracias Señor porque estoy sano”
+                  Platica con Dios como pláticas con tu mejor amigo, recuerda
+                  que Él siempre te escucha. Hazlo desde que te levantas,
+                  mientras te arreglas, mientras manejas, mientras trabajas,
+                  etc.
                 </li>
                 <br />
                 <li>
-                  Busca una Promesa de Dios en la Biblia que respalde tu
-                  petición, apréndetela y repítela en tu tiempo de oración.
-                  Ejemplo, para la petición de salvación para tu familia:
-                  “Porque Tú Palabra dice Cree en el Señor Jesucristo, y serás
-                  salvo, tú y tu casa. (Hechos 16:31)
+                  Cada mañana recuerda que tienes una cita con el Rey de Reyes.
+                  ¡No puedes perder tu cita, que gran privilegio Él nos da!
                 </li>
                 <br />
                 <li>
-                  Si tienes alguna relación dañada, arregla la situación lo
-                  antes posible, pide perdón y perdona.
+                  Si nunca has orado, comienza con quince minutos, pero que sea
+                  tiempo de calidad. Que nada te distraiga, hazlo cuando todavía
+                  no se ha levantado nadie en tu casa, o cuando ya todos se
+                  fueron.
                 </li>
                 <br />
                 <li>
-                  En tu oración diaria pídele a Dios que examine tu corazón,
-                  entrégale tus áreas de debilidad y pídele que te ayude a
-                  alinearte a Su voluntad.
+                  Agrega 5 minutos más cada día a tu tiempo de oración, hasta
+                  que logres como mínimo una hora.
                 </li>
                 <br />
                 <li>
-                  Si eres casado y tienes problemas en tu matrimonio, invierte
-                  en tu matrimonio, ve a la cena del amor y la amistad, pide
-                  ayuda a tu mentor, anciano o pastor.
+                  Si estás pasando alguna situación difícil, ora a Dios; si
+                  estás batallando con alguna tentación, ora a Dios; si
+                  necesitas paz, ora a Dios; en todo tiempo, ora a Dios.
                 </li>
               </ol>
             </div>
