@@ -58,7 +58,7 @@ class App extends Component {
 
   render() {
     let url = "http://aguilascfc.org/thecode";
-    const videoUrl = "https://aguilascfc.wistia.com/medias/1319c2baz4";
+    const videoUrl = "https://aguilascfc.wistia.com/medias/xts07q89zy";
     // let appId = '1792125874189569';
     const bosquejoUrl =
       "https://www.aguilascfc.org/wp-content/uploads/2019/01/THE-CODE-BOSQUEJOS.pdf";
@@ -156,38 +156,38 @@ class App extends Component {
             <p className="sub-heading">Versículo de esta semana</p>
             <div className="verse__container verse">
               <p>
-                <small>5</small> Cuando ustedes oren, no sean como los
-                hipócritas, que aman orar de pie en las sinagogas y en las
-                esquinas de las calles, para ser vistos por los hombres. De
-                cierto les digo que ya tienen su recompensa.
+                <small>12-14</small> ¿Está afligido alguno entre ustedes? ¡Que
+                ore! ¿Está alguno alegre? ¡Que cante salmos! ¿Está enfermo
+                alguno de ustedes? Que llame a los ancianos de la iglesia y que
+                oren por él, ungiéndole con aceite en el nombre del Señor.
                 <br />
-                <strong className="verse__ref">(Mateo 6:5 RVA-2015)</strong>
+                <strong className="verse__ref">
+                  (Santiago 5:12-14 RVA-2015)
+                </strong>
               </p>
             </div>
             <p className="sub-heading">Oración de esta semana</p>
             <div className="verse">
               <p>
-                Padre Celestial, te doy gracias por el gran privilegio que me
-                das de tener acceso a Tú Presencia a través de la oración.
+                Padre Celestial, te doy gracias por dejarnos la manera de
+                conectar contigo a través de la oración, por siempre estar
+                accesible para escucharme y por poder traer todas nuestras
+                cargas a ti.
                 <br />
                 <br />
-                Gracias por considerarme tu amigo, no quiero fallarte, y por eso
-                te pido que tu Espíritu Santo ponga en mí el querer como el
-                hacer, de hablar contigo todos los días, en todo momento y en
-                todo lugar como a mi mejor amigo. Quiero darte lo mejor de mí,
-                así como Tú lo has dado todo por mí.
+                Gracias porque sé que Tú siempre me escuchas y respondes a la
+                mayoría de mis peticiones en tu tiempo perfecto, has cambiado mi
+                tristeza en gozo cuando he clamado a ti en los momentos de
+                crisis que he pasado, y lo más importante es que en ti encuentro
+                descanso, paz, guianza, fortaleza y todo lo que necesito.
                 <br />
                 <br />
-                Perdóname por no haber valorado antes tu amor, tu tiempo y tu
-                sacrificio.
+                Gracias por tus promesas que nos dejaste para poder orar, y que
+                nos llenan de fe y esperanza en cada situación en nuestra vida.
                 <br />
                 <br />
-                Gracias porque a pesar de todo, al momento que te hablo, Tú
-                inclinas tu oído para escucharme, y cuando estoy angustiado,
-                triste, o pasando alguna situación, Tú me inundas de tu paz, de
-                tu amor, renuevas mis fuerzas, me das gozo, me das esperanza y
-                me llenas de fe. Gracias porque sé que siempre estás disponible
-                para mí 24/7. ¡No hay otro amigo como Tú! ¡Te amo!
+                Ayúdame Espíritu Santo a depender siempre de Dios y pon en mi
+                cada día el deseo de orar.
               </p>
             </div>
             <p className="sub-heading">
@@ -196,33 +196,26 @@ class App extends Component {
             <div className="verse">
               <ol>
                 <li>
-                  Platica con Dios como pláticas con tu mejor amigo, recuerda
-                  que Él siempre te escucha. Hazlo desde que te levantas,
-                  mientras te arreglas, mientras manejas, mientras trabajas,
-                  etc.
+                  No olvides cubrir a tu familia en oración todos los días y que
+                  tus hijos puedan ver en ti un modelo a seguir como un hombre o
+                  mujer que depende de Dios.
                 </li>
                 <br />
                 <li>
-                  Cada mañana recuerda que tienes una cita con el Rey de Reyes.
-                  ¡No puedes perder tu cita, que gran privilegio Él nos da!
+                  Si estás necesitando de sabiduría para tomar decisiones, ven a
+                  Dios en oración.
+                </li>
+                <br />
+                <li>En los momentos de crisis, ven a Dios en oración.</li>
+                <br />
+                <li>
+                  Si estás pasando estrés en tu vida y necesitas paz, ven a Dios
+                  en oración.
                 </li>
                 <br />
                 <li>
-                  Si nunca has orado, comienza con quince minutos, pero que sea
-                  tiempo de calidad. Que nada te distraiga, hazlo cuando todavía
-                  no se ha levantado nadie en tu casa, o cuando ya todos se
-                  fueron.
-                </li>
-                <br />
-                <li>
-                  Agrega 5 minutos más cada día a tu tiempo de oración, hasta
-                  que logres como mínimo una hora.
-                </li>
-                <br />
-                <li>
-                  Si estás pasando alguna situación difícil, ora a Dios; si
-                  estás batallando con alguna tentación, ora a Dios; si
-                  necesitas paz, ora a Dios; en todo tiempo, ora a Dios.
+                  Aparte de tu tiempo de oración personal, intégrate en un grupo
+                  de intercesión en la iglesia.
                 </li>
               </ol>
             </div>
